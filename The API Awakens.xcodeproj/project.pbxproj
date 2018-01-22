@@ -54,14 +54,62 @@
 		416E46661FE12C4C00651095 /* The API Awakens */ = {
 			isa = PBXGroup;
 			children = (
-				416E46671FE12C4C00651095 /* AppDelegate.swift */,
+				41B473622015FFC500913C97 /* Networking */,
+				41B473612015FA8700913C97 /* Models */,
+				41B473602015EABF00913C97 /* Supporting Files */,
+				41B4735F2015EAB800913C97 /* Root */,
+				41B4735E2015EAA900913C97 /* Storyboard */,
+				41B4735D2015EA9E00913C97 /* Resources */,
 				416E46691FE12C4C00651095 /* ViewController.swift */,
-				416E466B1FE12C4C00651095 /* Main.storyboard */,
-				416E466E1FE12C4C00651095 /* Assets.xcassets */,
-				416E46701FE12C4C00651095 /* LaunchScreen.storyboard */,
-				416E46731FE12C4C00651095 /* Info.plist */,
 			);
 			path = "The API Awakens";
+			sourceTree = "<group>";
+		};
+		41B4735D2015EA9E00913C97 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				416E466E1FE12C4C00651095 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		41B4735E2015EAA900913C97 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				416E466B1FE12C4C00651095 /* Main.storyboard */,
+				416E46701FE12C4C00651095 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		41B4735F2015EAB800913C97 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				416E46671FE12C4C00651095 /* AppDelegate.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		41B473602015EABF00913C97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				416E46731FE12C4C00651095 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41B473612015FA8700913C97 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41B473622015FFC500913C97 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69CH9UTLK7;
 				INFOPLIST_FILE = "The API Awakens/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moaz.The-API-Awakens";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69CH9UTLK7;
 				INFOPLIST_FILE = "The API Awakens/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moaz.The-API-Awakens";
 				PRODUCT_NAME = "$(TARGET_NAME)";
