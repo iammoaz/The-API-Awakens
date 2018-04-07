@@ -36,6 +36,7 @@ class ViewController: UIViewController {
                 }
                 self?.loadMoreCharacters(response.next)
             case .failure(let error):
+                self?.activityIndicatorController.remove()
                 self?.presentAlertController(with: "Error", message: error.localizedDescription)
                 print(error.localizedDescription)
             }
@@ -51,6 +52,7 @@ class ViewController: UIViewController {
                 }
                 self?.loadMoreVehicles(response.next)
             case .failure(let error):
+                self?.activityIndicatorController.remove()
                 self?.presentAlertController(with: "Error", message: error.localizedDescription)
                 print(error.localizedDescription)
             }
@@ -66,6 +68,7 @@ class ViewController: UIViewController {
                 }
                 self?.loadMoreStarships(response.next)
             case .failure(let error):
+                self?.activityIndicatorController.remove()
                 self?.presentAlertController(with: "Error", message: error.localizedDescription)
                 print(error.localizedDescription)
             }
