@@ -84,7 +84,7 @@ class ConversionCell: UITableViewCell, UITextFieldDelegate {
             return
         }
         
-        guard conversionRate != 0 else {
+        guard conversionRate != 0 || conversionRate >= 0 else {
             parentController?.presentAlertController(with: "Error", message: "Conversion rate should be a greater than 0")
             return
         }
