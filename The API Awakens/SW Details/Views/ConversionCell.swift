@@ -84,13 +84,13 @@ class ConversionCell: UITableViewCell, UITextFieldDelegate {
             return
         }
         
-        guard conversionRate != 0 || conversionRate >= 0 else {
+        if conversionRate == 0 || conversionRate < 0 {
             parentController?.presentAlertController(with: "Error", message: "Conversion rate should be a greater than 0")
-            return
+            
+        } else {
+            let usdValue = conversionRate * credits
+            self.valueLabel.text = "\(usdValue) $"
+            sender.toggleDisable(creditButton)
         }
-        
-        let usdValue = conversionRate * credits
-        self.valueLabel.text = "\(usdValue) $"
-        sender.toggleDisable(creditButton)
     }
 }
