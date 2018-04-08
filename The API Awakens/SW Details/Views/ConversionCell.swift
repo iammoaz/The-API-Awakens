@@ -81,6 +81,7 @@ class ConversionCell: UITableViewCell, UITextFieldDelegate {
     @IBAction func convertToUSD(_ sender: UIButton) {
         guard let conversionRate = conversionRate else {
             self.conversionRateField.becomeFirstResponder()
+            parentController?.presentAlertController(with: "Error", message: "Conversion rate should be a greater than 0")
             return
         }
         
